@@ -4,13 +4,42 @@
         <meta charset="utf-8">
         <title>My first chart with Highcharts</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"> </script>
-        <script src="js/highcharts.js"></script>
+     <script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="http://code.highcharts.com/modules/exporting.js"></script>
+
+
+
 </head>
 <body>
-
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 <h1>My first chart with Highcharts</h1>
 <!-- add the div and the code below this comment -->
-
-
+<script>
+$(document).ready(function(){
+    $('#container').highcharts({
+        chart: {
+            type: 'areaspline'
+        },
+        title: {
+            text: 'Fruit Consumption'
+        },
+        xAxis: {
+            categories: ['Cherries','Apples', 'Mangoes','Bananas','Oranges']
+        },
+        yAxis: {
+            title: {
+                text: 'Fruit that was eaten last week'
+            }
+        },
+        series: [{
+            name: 'Belle',
+            data: [6, 0, 4, 2,5]
+        }, {
+            name: 'Beau',
+            data: [6, 7, 3, 0,2]
+        }]
+    });
+});
+</script>
 </body>
 </html>

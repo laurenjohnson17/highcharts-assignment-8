@@ -1,0 +1,48 @@
+body {
+    background: #DBC38A;
+    font-size: 100%; /* DO NOT change */
+    margin: 0; /* DO NOT change */
+} 
+h1, p {
+	margin: 30px;
+	color: #fff;
+	}
+h2 {
+    text-align:center;
+    color:#fff;
+    }
+
+header {
+    background: #6ABBED;
+    }
+
+#paragraphone {
+		background:#96CEED;
+ 		color: #fff;
+ 		width: 100%;
+       padding: 30px;
+       margin-top: 40px;
+      margin-bottom: 30px;
+ 		}
+#paragraphtwo {
+	  background:#96CEED;
+ 	  color: #fff;
+ 	  width: 100%;
+      padding: 30px;
+      margin-top: 40px;
+      margin-bottom: 30px;
+ }
+
+ figcaption {
+ float:right;
+ margin-top:10px;
+ }
+ 
+
+
+a:link {
+        color: #fff;
+}
+a:visited {
+         color: #000;
+}
